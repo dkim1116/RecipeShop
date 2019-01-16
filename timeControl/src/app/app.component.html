@@ -14,4 +14,12 @@
       </ol>
     </div>
   </div>
+  <div>
+    <app-time-control (firedInterval)="onIntervalFired($event)"></app-time-control>
+  </div>
+  <div>
+    <app-odd *ngFor="let odd of oddNumbers" [number]="odd"></app-odd>
+
+    <app-even *ngFor="let even of evenNumbers" [test]="even"></app-even>
+  </div>
 </div>
